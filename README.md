@@ -8,11 +8,11 @@
 
 ## 公開前に直すところ
 
-- 連絡先のメールアドレス: `support.html` の `REPLACE_WITH_EMAIL`（2 か所）
+- 連絡先のメールアドレス: `support.html` の メールアドレス（設定済み）
 - App Store のボタン: `index.html` の「App Store で公開予定」を、公開後にストアの URL に置き換える
 
 ```bash
-grep -rn REPLACE_WITH_EMAIL .
+grep -rn "mailto:" .
 ```
 
 ## 公開（GitHub Pages）
